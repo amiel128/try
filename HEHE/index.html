@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>KISS KO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>mwa</h1>
+</body>
+</html>
+
+    <style>
+        *{
+    padding:0;
+    margin:0;
+
+ }
+ body{
+    background: purple;
+
+ }
+ .Main{
+    padding-top: 40%;
+
+
+ }
+ input{
+    font-size: 30px;
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: transparent;
+padding-left: 10px;
+
+ }
+ button{
+    padding: 5px;
+    font-size: 40px;
+    background: black;
+    color: white;
+    border: 2px solid gray;
+    border-radius: 20px;
+ }
+ .contant{
+    display: none;
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
+    color: red;
+    text-shadow:  0 0 9px blue,
+         0 0 7px #fff,
+         0 0 10px #fff;
+
+
+ }
+ .heart{
+    animation: zoom 0.2s linear;
+    animation-iteration-count: infinite;
+
+ }
+    </style>
+    <script>
+        function Show(){
+
+    var name =document.getElementById('name').value;
+ 
+ if(document.getElementById('name').value=="")
+ {
+    alert('Please type your Name');
+ }
+ else{
+    document.getElementsById("addname").innerHTML="name";
+
+    document.getElementById('m1').style.display="none";  
+
+    document.getElementById('c1').style.display="block";
+ }
+
+}
+
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>HTML</title>
+
+    <!-- HTML -->
+
+
+    <!-- Custom Styles -->
+
+</head>
+
+<body>
+    <div class="Main" id="m1">
+        <center>
+        <h1>ENTER YOUR NAME</h1>
+        <br>
+        <br>
+        <input type="text" placeholder="Enter Name" id="name">
+        <br>
+        <br>
+        <button onclick="Show()">CLICK</button>
+
+        </center>
+
+    </div>
+    <div class="contant" id="c1">
+        <div center>
+              <h1>I</h1>
+        <h1 class="heart"><3</h1>
+
+            <h1>YOU</h1>
+            <h1>LOVE</h1>
+            <h2 id="addname"></h2>
+            <h1>rawr</h1>
+        <center>
+
+    </div>
+
+</body>
+</html>
